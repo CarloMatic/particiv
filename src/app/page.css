@@ -111,6 +111,25 @@
   flex-wrap: wrap;
 }
 
+.hero-logo-img {
+  height: 60px;
+  width: auto;
+  margin-bottom: var(--space-2xl);
+  display: inline-block;
+}
+
+.cta-phone-link {
+  display: block;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.cta-phone-link:hover {
+  color: var(--color-accent);
+}
+
 /* --- Pillars (Solution) --- */
 .pillars {
   display: flex;

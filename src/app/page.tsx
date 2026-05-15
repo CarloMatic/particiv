@@ -58,10 +58,8 @@ function HeroSection() {
     <section className="hero">
       <div className="container hero-inner">
         <div className="hero-content">
-          <div className="badge">
-            <FlaskConical size={14} />
-            Forschungsprojekt des BMDV
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.svg" alt="PartiCiv" className="hero-logo-img" />
           <h1>
             Beteiligungsverfahren sind aufwändig.
             <br />
@@ -392,7 +390,7 @@ function TeamSection() {
         <div className="grid-3">
           <div className="card team-card">
             <div className="team-avatar">
-              <GraduationCap size={32} />
+              <Brain size={32} />
             </div>
             <h3>Jonathan Matthes</h3>
             <p className="team-role">Formelle Beteiligungsverfahren</p>
@@ -404,7 +402,7 @@ function TeamSection() {
           </div>
           <div className="card team-card">
             <div className="team-avatar">
-              <Brain size={32} />
+              <GraduationCap size={32} />
             </div>
             <h3>Peter Gölzhäuser</h3>
             <p className="team-role">Künstliche Intelligenz</p>
@@ -525,9 +523,11 @@ function CTASection() {
               <ArrowRight size={18} />
             </a>
           </div>
-          <p className="cta-email">
-            Oder schreiben Sie uns: <a href="mailto:info@particiv.de">info@particiv.de</a>
-          </p>
+          <div style={{ marginTop: '1.5rem' }}>
+            <a href="tel:+4924191880711" className="cta-phone-link">
+              oder rufen Sie uns an: <strong>0241 91880-711</strong>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -548,13 +548,12 @@ function Footer() {
           </div>
           <p>
             Ein Projekt der Interactive Pioneers GmbH
-            <br />
-            in Kooperation mit der RWTH Aachen University.
           </p>
         </div>
         <div className="footer-links">
-          <a href="/impressum">Impressum</a>
-          <a href="/datenschutz">Datenschutzerklärung</a>
+          <a href="https://www.interactive-pioneers.de/blog/impressum/" target="_blank" rel="noopener noreferrer">Impressum</a>
+          <a href="https://www.interactive-pioneers.de/blog/datenschutzbestimmungen/" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>
+          <a href="tel:+4924191880711">0241 91880-711</a>
           <a href="mailto:info@particiv.de">info@particiv.de</a>
         </div>
       </div>
