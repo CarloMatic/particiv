@@ -33,9 +33,9 @@ function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="/" className="header-logo">
+        <a href="#" className="header-logo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.svg" alt="PartiCiv" className="header-logo-img" />
+          <img src="logo.svg" alt="PartiCiv" className="header-logo-img" />
         </a>
         <nav className="header-nav">
           <a href="#loesung">Lösung</a>
@@ -59,7 +59,7 @@ function HeroSection() {
       <div className="container hero-inner">
         <div className="hero-content">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.svg" alt="PartiCiv" className="hero-logo-img" />
+          <img src="logo.svg" alt="PartiCiv" className="hero-logo-img" />
           <h1>
             Beteiligungsverfahren sind aufwändig.
             <br />
@@ -544,7 +544,7 @@ function Footer() {
         <div className="footer-brand">
           <div className="footer-logo-row">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt="PartiCiv" className="footer-logo-img" />
+            <img src="logo.svg" alt="PartiCiv" className="footer-logo-img" />
           </div>
           <p>
             Ein Projekt der Interactive Pioneers GmbH
